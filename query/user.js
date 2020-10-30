@@ -1,6 +1,8 @@
 import { userInfo } from "./basicType";
 import { queryCollection } from "./helper";
 
+export const info = () => userInfo;
+
 export const followings = (first = 100) => `
   following(first: ${first}) {
     ${queryCollection(userInfo)}

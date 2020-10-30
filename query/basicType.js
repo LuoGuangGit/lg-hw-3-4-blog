@@ -1,9 +1,10 @@
 export const userInfo = `
-  avatarUrl
-  bioHTML
-  email
-  name
   login
+  name
+  email
+  bioHTML
+  avatarUrl
+  location
   url
 `;
 

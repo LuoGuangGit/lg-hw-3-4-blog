@@ -6,13 +6,15 @@
 
 const queries = require("./dist/query/index.cjs").queries;
 
+console.log(queries);
+
 module.exports = {
   siteName: "Gridsome",
   plugins: [
     {
       use: "gridsome-source-github-api",
       options: {
-        token: "4082ed9cbade87cdb00eac65c7bc00b00d1df66f",
+        token: "f55c7c3781e2878096ee41f637b453af0cf1081c",
         graphQLQuery: queries,
       },
     },
