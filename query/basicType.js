@@ -10,9 +10,24 @@ export const userInfo = `
 
 export const repoInfo = `
   id
+  name
   homepageUrl
+  description
+  stargazerCount
+  watchers {
+    totalCount
+  }
+  forkCount
+  primaryLanguage {
+    name
+  }
   name
   url
+  updatedAt
+  licenseInfo {
+    spdxId
+  }
+  createdAt
   updatedAt
 `;
 
