@@ -47,17 +47,17 @@
           <div style="font-size: 1.1rem; color: #303133; padding: 10px 0px 0px 0px">
             <el-row>
               <el-col :span="16" style="padding-top: 5px">
-                <!-- <el-tooltip effect="dark" :content="'star ' + item.stargazersCount" placement="bottom"> -->
+                <el-tooltip effect="dark" :content="'star ' + item.stargazersCount" placement="bottom">
                 <i class="el-icon-star-off" style="margin: 0px 5px 0px 0px"></i>
-                <!-- </el-tooltip> -->
+                </el-tooltip>
                 {{ item.stargazersCount }}
-                <!-- <el-tooltip effect="dark" :content="'watch ' + item.watchersCount" placement="bottom"> -->
+                <el-tooltip effect="dark" :content="'watch ' + item.watchersCount" placement="bottom">
                 <i class="el-icon-view" style="margin: 0px 5px 0px 15px"></i>
-                <!-- </el-tooltip> -->
+                </el-tooltip>
                 {{ item.watchersCount }}
-                <!-- <el-tooltip effect="dark" :content="'fork ' + item.forksCount" placement="bottom"> -->
+                <el-tooltip effect="dark" :content="'fork ' + item.forksCount" placement="bottom">
                 <i class="el-icon-bell" style="margin: 0px 5px 0px 15px"></i>
-                <!-- </el-tooltip> -->
+                </el-tooltip>
                 {{ item.forksCount }}
               </el-col>
               <el-col :span="8" style="text-align: right">

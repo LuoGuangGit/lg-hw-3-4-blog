@@ -52,7 +52,7 @@
               </el-submenu>
             </el-menu>
           </el-col>
-          <!-- <el-col :span="8" style="text-align: center; padding: 12px 0px 0px 10px">
+          <el-col :span="8" style="text-align: center; padding: 12px 0px 0px 10px">
             <el-row>
               <el-col :span="4">
                 <el-popover placement="top" trigger="hover">
@@ -89,7 +89,7 @@
             <audio ref="music" loop>
               <source :src="audioUrl" type="audio/mpeg" />
             </audio>
-          </el-col> -->
+          </el-col>
           <el-col :span="4" style="text-align: right">
             <div style="font-size: 20px; color: #606266; margin-top: 5px">
               <b>{{ githubUsername }}</b>
@@ -237,9 +237,9 @@ export default {
   },
   watch: {},
   mounted() {
-    // this.$nextTick(() => {
-    //   setInterval(this.listenMusic, 1000);
-    // });
+    this.$nextTick(() => {
+      setInterval(this.listenMusic, 1000);
+    });
   },
   created() {},
   methods: {
