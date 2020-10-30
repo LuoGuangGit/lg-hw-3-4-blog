@@ -73,13 +73,13 @@
                 </el-popover>
               </el-col>
               <el-col :span="14" style="padding-left: 20px">
-                <el-slider
+                <!-- <el-slider
                   @change="changeTime"
                   :format-tooltip="formatTime"
                   :max="music.maxTime"
                   v-model="music.currentTime"
                   style="width: 100%"
-                ></el-slider>
+                ></el-slider> -->
               </el-col>
               <el-col :span="6" style="padding: 9px 0px 0px 10px; color: #909399; font-size: 13px">
                 {{ formatTime(music.currentTime) }}/{{ formatTime(music.maxTime) }}
@@ -235,12 +235,11 @@ export default {
       return this.configuration.webSites;
     },
   },
-  watch: {
-  },
+  watch: {},
   mounted() {
-    this.$nextTick(() => {
-      setInterval(this.listenMusic, 1000);
-    });
+    // this.$nextTick(() => {
+    //   setInterval(this.listenMusic, 1000);
+    // });
   },
   created() {},
   methods: {
@@ -270,6 +269,7 @@ export default {
           break;
       }
     },
+
     listenMusic() {
       if (!this.$refs.music) {
         return;
