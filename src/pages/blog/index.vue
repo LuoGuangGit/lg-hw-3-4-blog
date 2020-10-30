@@ -147,5 +147,8 @@ export default {
       this.$router.push("/user/blog/details/" + id);
     },
   },
+  metaInfo: {
+    title: '首页'
+  }
 };
 </script>

@@ -51,7 +51,12 @@
             <div v-loading="followingsLoading">
               <div v-if="followings.length">
                 <el-row style="min-height: 200px">
-                  <el-col :span="8" v-for="(item, index) in followings" :key="'following' + index" style="padding: 10px">
+                  <el-col
+                    :span="8"
+                    v-for="(item, index) in followings"
+                    :key="'following' + index"
+                    style="padding: 10px"
+                  >
                     <el-card shadow="hover" style="font-size: 13px; color: #606266; line-height: 20px">
                       <i class="el-icon-star-off"></i>&emsp;
                       <a
@@ -169,6 +174,11 @@ export default {
           break;
       }
     },
+  },
+  metaInfo() {
+    return {
+      title: "社交圈",
+    };
   },
 };
 </script>

@@ -180,5 +180,10 @@ export default {
       window.open(url);
     },
   },
+  metaInfo() {
+    return {
+      title: "开源项目",
+    };
+  },
 };
 </script>

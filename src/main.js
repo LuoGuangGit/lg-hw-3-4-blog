@@ -21,4 +21,10 @@ export default function(Vue, { router, head, isClient }) {
   Vue.prototype.$markdown = function(value) {
     return md.render(value);
   };
+
+  Vue.mixin({
+    metaInfo: {
+      titleTemplate: "%s - 清风慕竹",
+    },
+  });
 }

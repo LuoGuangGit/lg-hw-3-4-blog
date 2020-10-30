@@ -98,5 +98,10 @@ export default {
     },
   },
   mounted() {},
+  metaInfo() {
+    return {
+      title: "最新动态",
+    };
+  },
 };
 </script>
