@@ -52,7 +52,7 @@
               </el-submenu>
             </el-menu>
           </el-col>
-          <el-col :span="8" style="text-align: center; padding: 12px 0px 0px 10px">
+          <!-- <el-col :span="8" style="text-align: center; padding: 12px 0px 0px 10px">
             <el-row>
               <el-col :span="4">
                 <el-popover placement="top" trigger="hover">
@@ -73,13 +73,13 @@
                 </el-popover>
               </el-col>
               <el-col :span="14" style="padding-left: 20px">
-                <!-- <el-slider
+                <el-slider
                   @change="changeTime"
                   :format-tooltip="formatTime"
                   :max="music.maxTime"
                   v-model="music.currentTime"
                   style="width: 100%"
-                ></el-slider> -->
+                ></el-slider>
               </el-col>
               <el-col :span="6" style="padding: 9px 0px 0px 10px; color: #909399; font-size: 13px">
                 {{ formatTime(music.currentTime) }}/{{ formatTime(music.maxTime) }}
@@ -89,7 +89,7 @@
             <audio ref="music" loop>
               <source :src="audioUrl" type="audio/mpeg" />
             </audio>
-          </el-col>
+          </el-col> -->
           <el-col :span="4" style="text-align: right">
             <div style="font-size: 20px; color: #606266; margin-top: 5px">
               <b>{{ githubUsername }}</b>

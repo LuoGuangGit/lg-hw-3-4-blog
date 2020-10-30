@@ -24,7 +24,8 @@ export default function(Vue, { router, head, isClient }) {
 
   Vue.mixin({
     metaInfo: {
-      titleTemplate: "%s - 清风慕竹",
+      title: "清风慕竹",
+      // titleTemplate: "%s - 清风慕竹",
     },
   });
 }
