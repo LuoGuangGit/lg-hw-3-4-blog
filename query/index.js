@@ -1,10 +1,11 @@
 import { followings, followers, info } from "./user";
 import { gists } from "./gist";
 import { repositories } from "./repo";
-import { query } from "./helper";
+import { query, queryByUser } from "./helper";
 
-export const queries = query(
-  [info, followings, followers, gists, repositories].map((q) => q()).join("\n")
-);
+export const queries =
+  query(
+    [info, followings, followers, repositories].map((q) => q()).join("\n")
+  ) + queryByUser("GitHub-Laziji", gists());
 
 export default queries;

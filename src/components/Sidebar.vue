@@ -2,7 +2,7 @@
   <div>
     <el-card shadow="never">
       <el-menu :default-active="active">
-        <el-menu-item v-for="item in menus" :key="item.path" :index="item.path" @click="onClickMenuItem">
+        <el-menu-item v-for="item in menus" :key="item.path" :index="item.path" @click="() => onClickMenuItem(item)">
           <!-- <g-link :to="item.path"> -->
           <i :class="item.icon"></i>
           <span slot="title">{{ item.title }}</span>

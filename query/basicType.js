@@ -17,9 +17,13 @@ export const repoInfo = `
 `;
 
 export const gistInfo = `
-  createdAt
-  description
   id
-  name
+  createdAt
+  updatedAt
+  description
   url
+  files {
+    name
+    text
+  }
 `;

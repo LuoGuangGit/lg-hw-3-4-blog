@@ -1,16 +1,12 @@
 export const query = (q) => `
-  query{
-    viewer {
-      ${q}
-    }
+  viewer {
+    ${q}
   }
 `;
 
 export const queryByUser = (userLogin, q) => `
-  query{
-    user(login: ${userLogin}) {
-      ${q}
-    }
+  user(login: "${userLogin}") {
+    ${q}
   }
 `;
 
