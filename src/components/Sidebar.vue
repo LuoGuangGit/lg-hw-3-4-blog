@@ -79,9 +79,6 @@ export default {
     this.active = "/" + arr[1] + "/" + arr[2];
   },
   methods: {
-    cancellation() {
-      this.$store.dispatch("Cancellation");
-    },
     onClickMenuItem(item) {
       window.location.href = item.path;
     },
